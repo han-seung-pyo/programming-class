@@ -1,0 +1,19 @@
+def lengh_on_square(n):
+    t=[]
+    for k in np.arange(1,n+1):
+        x=[]
+        length=[]
+        for j in np.arange(1,11):
+            p=np.array([np.random.uniform(0,1),np.random.uniform(0,1)])
+            x.append(p)
+        for i in np.arange(1,11):
+            if i==0:
+                next
+            elif i==10:
+                l=np.sqrt((x[9][0]-x[0][0])**2+(x[9][1]-x[0][1])**2)
+            else:
+                l=np.sqrt((x[i][0]-x[i-1][0])**2+(x[i][1]-x[i-1][1])**2) 
+            length.append(l)
+        lengthsum=np.cumsum(length)
+        t.append(lengthsum[9])
+    return t
